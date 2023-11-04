@@ -1,0 +1,27 @@
+
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+}
+.file {
+  display: flex;
+  flex-direction: column;
+}
+
+.explorer-btn {
+  display: flex;
+  gap: 4px;
+}
+
+.explorer-btn > button {
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+.explorer-btn>button:hover {
+  border: 1px solid coral;
+  background: transparent;
+}
