@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import { ExplorerData } from "./assets/explorer-data";
-import Explorer from "./components/explorer";
+import Explorer from "./components/file-explorer/explorer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ImageCarousel from "./components/image-carousel/image-carousel";
+import Pagination from "./components/pagination/pagination";
 
 function App() {
   const [explorerData, setExplorerData] = useState(ExplorerData);
@@ -44,6 +45,10 @@ function App() {
             <Route
               path="/image-carousel"
               element={<ImageCarousel images={images} />}
+            />
+            <Route
+              path="/pagination"
+              element={<Pagination size={13} activePage={3} />}
             />
           </Routes>
         </div>

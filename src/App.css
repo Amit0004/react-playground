@@ -108,3 +108,33 @@
       transform: translateX(0);
     }
 }
+
+
+/* Pagination component styles */
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination-buttons > button {
+  padding: 5px;
+  width: auto;
+  cursor: pointer;
+  border: 1px solid cornflowerblue;
+  background: none;
+  font-weight: bold;
+}
+
+.pagination-buttons > button.active {
+  background: cornflowerblue;
+  color: white;
+}
+
+.pagination-buttons>button:hover {
+  border: 1px solid cornflowerblue;
+  background: cornflowerblue;
+  color: white;
+}

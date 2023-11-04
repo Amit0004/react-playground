@@ -1,6 +1,6 @@
 import Explorer from "./explorer";
-import { ExplorerData } from "../assets/explorer-data";
-import { render } from "../../config/test-utils";
+import { ExplorerData } from "../../assets/explorer-data";
+import { render } from "../../../config/test-utils";
 
 describe("Tests for <Explorer /> component", () => {
   test("should render the component properly", () => {

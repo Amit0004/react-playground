@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useExplorer from "../hooks/use-explorer";
+import useExplorer from "../../hooks/use-explorer";
 
 const Explorer = ({ explorerData }: any) => {
   const [fileData, setFileData] = useState(
